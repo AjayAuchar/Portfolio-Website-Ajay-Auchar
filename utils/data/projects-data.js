@@ -1,39 +1,21 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
+        name: 'Ramp Widget - Crypto On-Ramp / Off-Ramp Platform',
+        description: "At TransFi, I built and maintained a secure, scalable crypto on-ramp/off-ramp platform enabling users to convert between fiat and digital assets across borders. I developed end-to-end on-ramp flows for purchasing crypto via local payment methods (bank transfers, cards, UPI) with real-time exchange rates, and off-ramp functionality to convert crypto back to fiat. I integrated multiple Payment Service Providers (PSPs) and liquidity partners, implemented KYC/KYB and AML compliance checks, and optimized transaction reconciliation and webhook handling for accurate, real-time status updates. I also improved performance through lazy loading, code splitting, memoization, and optimized MongoDB queries for high-volume transaction processing.",
+        tools: ['React', 'Node JS', 'Express', 'MongoDB', 'REST APIs', 'Webhooks', 'Payment Gateway', 'Blockchain', 'JWT'],
+        role: 'Full-Stack Developer (MERN)',
         code: '',
         demo: '',
     },
     {
         id: 2,
-        name: 'Travel Agency App',
-        description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
-        tools: ['NextJS', 'Tailwind CSS', "Google Maps", "NestJS", "TypeScript", "MySQL", "AWS S3", "Sun-Editor", "Gmail Passkey"],
-        role: 'Full Stack Developer',
+        name: 'Prep Assistant - Real-Time Kitchen Management Platform',
+        description: "At Interproductec, I architected scalable React.js applications using a reusable component library and engineered WebSocket-based real-time communication for instant UI updates on kitchen equipment status. I built a real-time oven monitoring dashboard with live status tracking (Baking, Heating, Done, Error), and optimized UI workflows that cut commercial kitchen teams' operational time by 4-5 hours per day. I reduced initial page load time via lazy loading and code splitting, developed robust Redux state management, and designed camera-based validation logic to prevent incorrect product placement in trays.",
+        tools: ['React', 'Redux', 'JavaScript', 'TypeScript', 'Material UI', 'WebSocket', 'REST APIs'],
+        role: 'Frontend Developer',
         code: '',
         demo: '',
-    },
-    {
-        id: 3,
-        name: 'AI Powered Real Estate',
-        description: 'My team built an AI-based real estate app using Replicate API and OpenAI. We used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose to develop the API. We utilized NextJS, Formik, TailwindCSS, and other npm libraries for the UI. We have trained multiple AI assistants using the latest GPT model and integrated Replicate API for image processing. We added role-based auth, subscription plans, Cron job scheduling, and payment integration with Stripe.',
-        tools: ['React', 'Bootstrap', 'SCSS', 'Stripe', 'Express', 'TypeScript', 'MongoDB', 'Azure Blob', 'OpenAI API', 'Replicate AI', 'Cronjob', 'JWT'],
-        code: '',
-        role: 'Full Stack Developer',
-        demo: '',
-    },
-    {
-        id: 4,
-        name: 'Newsroom Management',
-        description: "My team and I developed a newspaper management dashboard application called Newsroom Management. As a front-end developer, I worked on creating the dashboard using NextJS, Material UI, Redux, Calendar, and other necessary npm libraries. We used React Redux to manage the application's state and React-hook-form and Sun Editor to handle forms.",
-        tools: ['NextJS', 'Material UI', 'Redux', 'Sun Editor', "Calendar"],
-        code: '',
-        demo: '',
-        role: 'Full Stack Developer',
     }
 ];
 
