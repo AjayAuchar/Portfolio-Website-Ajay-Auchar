@@ -52,7 +52,6 @@ function Skills() {
                 </div>
                 <div className="flex flex-col items-center justify-center gap-3 p-6">
                   <div className="h-8 sm:h-10">
-                    {console.log(skillsImage(skill)?.src, "src")}
                     <Image
                       src={skillsImage(skill)?.src}
                       alt={skill}

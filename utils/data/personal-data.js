@@ -9,11 +9,11 @@ export const personalData = {
   address: "Mumbai, India",
   github: "https://github.com/AjayAuchar",
   facebook: "",
-  linkedIn: "https://www.linkedin.com/in/ajay-auchar",
+  linkedIn: "www.linkedin.com/in/ajay-auchar",
   twitter: "",
   stackOverflow: "",
   leetcode: "",
-  devUsername: "said7388",
+  devUsername: "Ajay Auchar",
   resume:
     "https://drive.google.com/file/d/11ZKhl4ktANotGbPEWotP0RWevRzXCBVz/view?usp=drivesdk",
 };
