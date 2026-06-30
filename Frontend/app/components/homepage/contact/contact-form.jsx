@@ -10,53 +10,22 @@ function ContactForm() {
   const [error, setError] = useState({ email: false, required: false });
   const [isLoading, setIsLoading] = useState(false);
   const [userInput, setUserInput] = useState({
-    name: "",
+    fullname: "",
     email: "",
+    // address: "Airoli Navi Mumbai",
     message: "",
   });
 
   const checkRequired = () => {
-    if (userInput.email && userInput.message && userInput.name) {
+    if (userInput.email && userInput.message && userInput.fullname) {
       setError({ ...error, required: false });
     }
   };
 
-  // const handleSendMail = async (e) => {
-  //   e.preventDefault();
-
-  //   if (!userInput.email || !userInput.message || !userInput.name) {
-  //     setError({ ...error, required: true });
-  //     return;
-  //   } else if (error.email) {
-  //     return;
-  //   } else {
-  //     setError({ ...error, required: false });
-  //   }
-
-  //   try {
-  //     setIsLoading(true);
-  //     const res = await axios.post(
-  //       `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-  //       userInput,
-  //     );
-
-  //     toast.success("Message sent successfully!");
-  //     setUserInput({
-  //       name: "",
-  //       email: "",
-  //       message: "",
-  //     });
-  //   } catch (error) {
-  //     toast.error(error?.response?.data?.message);
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!userInput.email || !userInput.message || !userInput.name) {
+    if (!userInput.email || !userInput.message || !userInput.fullname) {
       setError({ ...error, required: true });
       return;
     } else if (error.email) {
@@ -68,7 +37,7 @@ function ContactForm() {
     try {
       setIsLoading(true);
       const res = await fetch(
-        "https://protfolio-website-ajay-auchar.onrender.com/users",
+        "https://portfolio-website-ajay-auchar.onrender.com/users",
         {
           method: "POST",
           headers: {
@@ -80,7 +49,7 @@ function ContactForm() {
 
       toast.success("Message sent successfully!");
       setUserInput({
-        name: "",
+        fullname: "",
         email: "",
         message: "",
       });
@@ -111,10 +80,10 @@ function ContactForm() {
               maxLength="100"
               required={true}
               onChange={(e) =>
-                setUserInput({ ...userInput, name: e.target.value })
+                setUserInput({ ...userInput, fullname: e.target.value })
               }
               onBlur={checkRequired}
-              value={userInput.name}
+              value={userInput.fullname}
             />
           </div>
 

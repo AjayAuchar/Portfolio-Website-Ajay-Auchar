@@ -24,8 +24,8 @@ function AboutSection() {
         <div className="flex justify-center order-1 lg:order-2">
           <Image
             src={personalData.profile}
-            width={270}
-            height={200}
+            width={340}
+            height={100}
             alt="Ajay Auchar"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
             // style={{ width: "auto", height: "auto" }}

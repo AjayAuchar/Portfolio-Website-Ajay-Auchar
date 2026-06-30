@@ -1,5 +1,5 @@
 {
-  "name": "developer-portfolio",
+  "name": "portfolio-frontend",
   "description": "Portfolio of Ajay Auchar",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +25,7 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.0",
+    "@tailwindcss/postcss": "^4.3.1",
     "autoprefixer": "latest",
     "eslint": "^9.20.0",
     "eslint-config-next": "^16.2.7",
