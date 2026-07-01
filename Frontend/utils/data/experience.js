@@ -1,14 +1,14 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Full-Stack Developer (MERN)',
+    title: "Full-Stack Developer (MERN)",
     company: "TransFi",
-    duration: "(May 2025 - Present)"
+    duration: "(Jan 2026 - Present)",
   },
   {
     id: 2,
-    title: "Frontend Developer",
+    title: "Full-Stack Developer (MERN)",
     company: "Interproductec, Mumbai",
-    duration: "(May 2022 - April 2025)"
-  }
-]
+    duration: "(May 2022 - Dec 2025)",
+  },
+];

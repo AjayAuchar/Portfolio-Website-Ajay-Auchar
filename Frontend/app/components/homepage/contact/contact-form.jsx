@@ -36,16 +36,13 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      const res = await fetch(
-        "https://portfolio-website-ajay-auchar.onrender.com/users",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(userInput),
+      const res = await fetch(process.env.NEXT_PUBLIC_API_URL + "/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(userInput),
+      });
 
       toast.success("Message sent successfully!");
       setUserInput({
